@@ -1,0 +1,22 @@
+project: trauma_triage_vlm
+seed: 2026
+backbone:
+  name: Qwen3-VL-8B
+  precision: int4_awq
+  temperature: 0.0
+  max_react_iterations: 3
+  edge_hardware: Jetson AGX Orin
+data:
+  ratic_sample_size: 874
+  mimic_sample_size: 2000
+  cq500_size: 491
+imaging:
+  target_slices_min: 5
+  target_slices_max: 10
+  min_component_area: 500
+evaluation:
+  seeds: [11, 19, 23, 29, 31]
+  bootstrap_iterations: 1000
+  high_acuity_sensitivity_floor: 0.90
+outputs:
+  directory: outputs

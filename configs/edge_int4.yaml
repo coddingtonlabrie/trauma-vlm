@@ -1,0 +1,7 @@
+inherits: main.yaml
+backbone:
+  name: Qwen3-VL-8B
+  precision: int4_awq
+  edge_hardware: Jetson AGX Orin
+  expected_vram_gb: 5.1
+  expected_latency_seconds: 38.2

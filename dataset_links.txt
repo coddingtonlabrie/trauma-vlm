@@ -1,0 +1,1 @@
+MIMIC-IV-ED 2.2 | https://physionet.org/content/mimic-iv-ed/2.2/ | reachable HTTP 200 | credentialed PhysioNet access | cited in Methods 4.7 and Data Availability
